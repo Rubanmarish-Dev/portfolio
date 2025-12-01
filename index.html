@@ -1,0 +1,237 @@
+<!-- Hi Everyone,This is my Portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruban Marish | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #000a0b; color: #ffffff;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 120px 20px 50px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+
+    header h2 {
+      font-size: 1.4rem;
+      color: #00adb5;
+      margin-top: 10px;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #00adb5;
+      margin: 0 15px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.4s;
+    }
+
+    nav a:hover {
+      background: #00adb5;
+      color: #111;
+    }
+
+    img.profile {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      border: 3px solid #00adb5;
+      box-shadow: 0px 0px 20px rgba(0, 173, 181, 0.7);
+      transition: 0.5s;
+    }
+
+    img.profile:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 80px auto;
+      text-align: center;
+      padding: 0 25px;
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    .skills-list span {
+      background: #05ded6;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 30px;
+      margin: 6px;
+      display: inline-block;
+      transition: 0.4s;
+      cursor: pointer;
+    }
+
+    .skills-list span:hover {
+      transform: translateY(-5px);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .project {
+      background: #ffffff; color:#111;
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+      cursor: pointer;
+      /* display: flex; */
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      background: #00adb5;
+      color: #111;
+    }
+
+    .contact a {
+      color: #00adb5;
+      font-weight: bold;
+      transition: 0.4s;
+    }
+
+    .contact a:hover {
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  .resume-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 26px;
+      background: #02d1e8;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background: #fff;
+      color: #0c0b0b;
+      border: 2px solid #1507d5;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="profile" src="IMG_4348.JPG" alt="Ruban Marish Profile Photo">
+    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Hi, I'm Ruban Marish</h1>
+    <h2>Java Fullstack Developer</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="Ruban.CV.png" target="_blank" download class="resume-btn">Download Resume</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Java Full Stack Developer skilled in HTML, CSS, JavaScript, and React.js for building responsive front-end applications.On the backend, I work with Java, SQL, and Spring Boot to develop robust and scalable systems.I have hands-on experience in creating end-to-end web applications with clean code and efficient functionality.I enjoy learning new technologies and continuously improving my development skills.I am eager to contribute to impactful projects and grow as a full-stack engineer.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React.js</span>
+      <span>Bootstrap</span>
+      <span>Java</span>
+      <span>Spring</span>
+      <span>Spring Boot</span>
+      <span>SQL</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects, Ceritificates & Internship</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>A dedicated Java full-stack developer skilled in HTML, CSS and javascript creating clean, efficient applications with strong problem-solving abilities and a passion for continuous learning.</p>
+      </div>
+      <div class="project">
+        <h3>Online Quiz Application</h3>
+        <p>An online quiz system that allows users to answer timed questions, receive instant scores, track performance, and enhance learning through interactive assessments, simple navigation, and automated result evaluation across topics.</p>
+      </div>
+
+      <div class="project">
+        <h3>Billing Website</h3>
+        <p>A billing website project that manages products, generates invoices, calculates totals with tax, tracks customer details, supports secure payments, and offers an easy dashboard for efficient billing, record keeping, and business management.</p>
+      </div>
+
+         <div class="project">
+        <h3>java Bus booking-basics mini project</h3>
+        <p>A simple Java console-based Bus Booking System allowing users to view buses, book seats, cancel tickets, and see bookings using OOP concepts like classes, objects, ArrayList, and basic validations.</p>
+      </div>
+
+      <div class="project">
+        <h3>Infosys Certified in React.js</h3>
+        <p>Infosys Certified in React.js, demonstrating strong skills in component-based development, state management, UI design, and modern JavaScript, enabling the creation of responsive, efficient, and scalable front-end applications.</p>
+      </div>
+
+      <div class="project">
+        <h3>Greens Technologies</h3>
+        <p>Completed a Java Full Stack Developer internship at Greens Technologies, gaining hands-on experience in Java, Spring Boot, SQL, React, real-time projects, debugging, and building end-to-end web applications with industry practices.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Phone: 7010142082</p>
+    <p>LinkedIn: <a href="http://linkedin.com/in/ruban-marish-555555r" target="_blank">Ruban Marish</a></p>
+    <p>Email: <a href="mailto:rubanmarish29@gmail.com" target="_blank">rubanmarish29@gmail.com</a></p>
+   </h6> Whatsapp: <a href="https://wa.me/917010142082" target="_blank">click to chat!</a></h6>
+  </section>
+</body>
+</html>
